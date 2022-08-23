@@ -1,0 +1,73 @@
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    /* the below 2 lines to make sticky */
+    position: sticky;
+    top: 0;
+    /* to make them horizontal */
+    display: flex;
+    align-items: center;
+    /* to keep nav bar always on top */
+    z-index: 999;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .topCenter {
+    /* to give custom sizes */
+    flex: 6;
+    /* 6/(6+3+3)*parent's width */
+  }
+  .topLeft,
+  .topRight {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .topIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  .topList {
+      /* instead of display flex we can use display:inline-block */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* to remove dots from li */
+    list-style: none;
+  }
+  
+  .topListItem {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    
+  }
+  
+  .topListItem:hover{
+      color: gray;
+      cursor: pointer;
+  }
+  
+  .topImg {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* to make sure it fits properly */
+    object-fit: cover;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .topSearchIcon {
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 15px;
+  }
